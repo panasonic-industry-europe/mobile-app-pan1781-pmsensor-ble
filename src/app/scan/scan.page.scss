@@ -1,0 +1,122 @@
+/* 
+
+ * Copyright 2021 Panasonic Industrial Devices Europe GmbH
+
+ * Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
+
+ * 1. Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
+
+ * 2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.
+
+ * 3. Neither the name of the copyright holder nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.
+
+ * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+*/
+
+.scan-page {
+    min-height: 100vh;
+    max-height: 100vh;
+    transition: opacity 0.2s linear;
+}
+
+.headline {
+    min-width: 100vw;
+    padding: 2vh 10vw 3vh 10vw;
+    max-height: 15vh;
+    top: 0;
+    display: flex;
+    justify-content: center;
+
+    .titel {
+        height: 34px;
+        padding-top: constant(safe-area-inset-top);
+        padding-top: env(safe-area-inset-top);
+
+    }
+
+    .icon-right {
+        height: 34px;
+        position: absolute;
+        top: 2vh;
+        right: 4vh;
+        display: flex;
+        align-items: center;
+    }
+
+    .icon-left {
+        height: 34px;
+        position: absolute;
+        top: 2vh;
+        left: 4vh;
+        display: flex;
+        align-items: center;
+    }
+}
+
+.scroll-container {
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    max-height: 75vh;
+}
+
+.image-container {
+    padding: 4vh 0;
+}
+
+.bt-symbol {
+    font-size: 96pt;
+    color: #E4E8EB;
+}
+
+.list-header {
+    padding: 1em 0 1em 10vw;
+    letter-spacing: .1em;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin: 0 10vw;
+    border-bottom: 1px solid #DEE3E6;
+}
+
+.list-image img {
+    max-height: 3.5em;
+    margin-right: 1em;
+}
+
+.icon-turqoise {
+    font-size: 1.5em;
+}
+
+.icon-red {
+    font-size: 1.5em;
+    color: #e66363;
+    transform: rotate(45deg);
+}
+
+.footer  {
+    padding-top: 4vh;
+}
+
+.footer-btn {
+    max-height: 44px;
+    min-height: 44px;
+    border-radius: 22px;
+    min-width: 80vw;
+}
+
+.icon-next {
+    background-image: url('../../assets/lib/icons/ui_icons/svg/icon-arrow-circle-small_inverted.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    min-width: 1em;
+    max-width: 1em;
+    min-height: 1em;
+    max-height: 1em;
+    margin-left: 8px;
+}

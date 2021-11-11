@@ -1,0 +1,180 @@
+/* 
+
+ * Copyright 2021 Panasonic Industrial Devices Europe GmbH
+
+ * Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
+
+ * 1. Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
+
+ * 2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.
+
+ * 3. Neither the name of the copyright holder nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.
+
+ * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+*/
+
+.splash {
+    min-width: 100vw;
+    min-height: 100vh;
+    .icon {
+        font-size: 48pt;
+    }
+    .title,
+    .title .dp-medium{
+        letter-spacing: .1em;
+        margin-left: .1em;
+    }  
+}
+
+.page {
+    min-height: 100vh;
+    min-width: 100vw;
+
+    .own-scroll-container {
+
+        z-index: 0;
+        overflow-y: scroll;
+        -webkit-overflow-scrolling: touch;
+        padding: 10vh 10vw 0 10vw;
+        margin-top: -10vh;
+        margin-bottom: 10vh;
+
+        .margin-less-card {
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+    }
+    .header {
+        min-height: 190px;
+        height: 190px;
+        padding: 24px 10vw 0px 10vw;
+        min-width: 100vw;
+        max-width: 100vw;
+        width: 100vw;
+        background-image: url('../../assets/lib/vector_elements/svg/bg_shape_demo.svg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: transparent;
+        z-index: 1000;
+        background-position-y: 100%;
+        filter: drop-shadow(0px 3px 4px #AEB9C1);
+
+        .headline {
+            min-width: 100vw;
+            padding: 2vh 10vw 3vh 10vw;
+            max-height: 15vh;
+            top: 0;
+            display: flex;
+            justify-content: center;
+        
+            .icon-right {
+                height: 34px;
+                position: absolute;
+                top: 2vh;
+                right: 4vh;
+                display: flex;
+                align-items: center;
+            }
+        
+            .icon-left {
+                height: 34px;
+                position: absolute;
+                top: 2vh;
+                left: 4vh;
+                display: flex;
+                align-items: center;
+            }
+
+            .scan-button {
+                padding-left: 12px;
+                padding-right: 12px;
+                min-height: 40px;
+                max-height: 40px;
+                // min-width: 40px;
+                // max-width: 40px;
+                border-radius: 20px;
+            }
+        }
+        
+        .nav-buttons {
+            min-width: 100%;
+            .nav-button {
+                min-height: 36px;
+                min-width: 36px;
+            }
+        }
+    }
+    .scroll-container {
+        z-index: 0;
+        overflow-y: scroll;
+        -webkit-overflow-scrolling: touch;
+        padding: 10vh 10vw 0 10vw;
+        margin-top: -10vh;
+        margin-bottom: 10vh;
+        // min-height: 70vh;
+        // max-height: 70vh;
+        .message-group {
+            min-width: 80vw;
+            img {
+                max-height: 7.5vh;
+            }
+            .message-bubble {
+                max-width: 65vw;
+                padding: 2vh;
+            }
+            .message-time {
+                padding: 0 5vw;
+                padding-top: 1vh;
+            }
+        }
+        .message-group-in {
+            .message-bubble {
+                border-radius: 0 10px 10px 10px;
+            }
+        }
+        .message-group-out {
+            .message-bubble {
+                border-radius: 10px 0 10px 10px;
+            }
+            .icon {
+                padding-bottom: 1vh;
+            }
+        }
+    }
+}
+
+.icon-title {
+    font-size: 25pt;
+    margin-bottom: 16px;
+}
+.title,
+.title .dp-medium{
+        letter-spacing: .1em;
+        margin-left: .3em;
+}
+
+.input-group {
+    min-height: 10vh;
+    min-width: 100vw;
+    padding: 0 10vw;
+    position: fixed;
+    // bottom: 0px;
+    input {
+        min-height: 40px;
+        max-height: 40px;
+        padding: 0 40px;
+        border: 1px solid #ECEFF1;
+        border-radius: 20px;
+        outline-style: none;
+        -webkit-appearance: none;
+        appearance: none;
+    }
+    .submit-button {
+        min-height: 40px;
+        max-height: 40px;
+        min-width: 40px;
+        max-width: 40px;
+        border-radius: 20px;
+    }
+}

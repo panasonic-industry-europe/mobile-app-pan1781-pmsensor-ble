@@ -1,0 +1,7 @@
+{
+  "name": "CR_Mini",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

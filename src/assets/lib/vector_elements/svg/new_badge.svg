@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="500px" height="202.3px" viewBox="0 0 500 202.3" style="enable-background:new 0 0 500 202.3;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:url(#SVGID_1_);}
+	.st1{fill:#FFFFFF;}
+</style>
+<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="5.4464" y1="101.1656" x2="492.4932" y2="101.1656">
+	<stop  offset="0" style="stop-color:#32B5D5"/>
+	<stop  offset="0.704" style="stop-color:#02A1C7"/>
+	<stop  offset="1" style="stop-color:#00A0C6"/>
+</linearGradient>
+<path class="st0" d="M398.8,10H101.2C50.8,10,10,50.8,10,101.2s40.8,91.2,91.2,91.2h297.7c50.3,0,91.2-40.8,91.2-91.2
+	S449.2,10,398.8,10z"/>
+<g>
+	<polygon class="st1" points="181.4,108.8 154.2,66.8 142.2,66.8 142.2,135.5 155.6,135.5 155.6,93.5 183,135.5 194.8,135.5 
+		194.8,66.8 181.4,66.8 	"/>
+	<polygon class="st1" points="216.6,135.5 261.9,135.5 261.9,123.6 230.1,123.6 230.1,106.9 257.3,106.9 257.3,94.9 230.1,94.9 
+		230.1,78.8 261.9,78.8 261.9,66.8 216.6,66.8 	"/>
+	<polygon class="st1" points="343.8,66.8 333.2,110 320.5,66.8 310.6,66.8 297.9,110 287.3,66.8 273.3,66.8 291.7,135.5 
+		302.9,135.5 315.5,93.9 328.1,135.5 339.4,135.5 357.8,66.8 	"/>
+</g>
+</svg>

@@ -1,0 +1,58 @@
+
+<div class="scan-page bg-white" fxLayout="column">
+
+  <!-- Headline -->
+  <div class="headline" fxFlex="0 1 auto">
+    <div class="dp-bold pt12 titel">BLUETOOTH</div>
+    <div class="icon text-white icon-right">&#xe801;</div>
+  </div>
+
+  <!-- Scroll Container -->
+  <div class="scroll-container" fxFlex="1 0 auto">
+
+    <!-- BT Symbol -->
+    <div class="image-container" fxLayout="row" fxLayoutAlign="center center">
+      <div class="icon bt-symbol">&#xe804;</div>
+    </div>
+
+    <!-- BLE Device List -->
+    <div class="list list-available">
+
+      <!-- Title -->
+      <div class="list-header dp-medium pt11 text-iron bg-diamond">
+        AVAILABLE DEVICES
+      </div>
+
+      <!-- List -->
+      <ul>
+        <li *ngFor="let device of dataService.scannedBluetoothDevices" fxLayout="row" fxLayoutAlign="space-between center">
+          <div fxLayout="row" fxFlex="100" fxLayoutAlign="space-between center">
+
+            <!-- Name and Status -->
+            <div fxLayout="column" fxLayoutAlign="center start" (click)=connect(device)>
+              <div class="dp-regular pt13">{{device.name ? device.name : "Unknown"}}</div>
+              <div class="dp-regular pt13"
+                [ngClass]="{ 'text-turqoise': device.connected, 'text-iron': !device.connected }">{{device.status}}
+              </div>
+            </div>
+            <!-- Buttons -->
+            <div *ngIf="!device.connected" class="icon icon-turqoise text-turqoise" (click)=connect(device)>&#xe81a;</div>
+            <div *ngIf="device.connected" fxLayout="row" fxLayoutAlign="end center">
+              <div class="icon icon-red" (click)="disconnect(device)">&#xe81a;</div>
+              <div class="icon icon-turqoise text-white icon-next" (click)=connect(device)></div>
+            </div>
+
+          </div>
+        </li>
+      </ul>
+
+    </div>
+  </div>
+
+  <!-- Footer with scan button -->
+  <div class="footer" fxLayout="row" fxLayoutAlign="center start" fxFlex="0 1 auto">
+    <div class="footer-btn dp-bold pt11 text-white bg-turqoise ripple" fxLayout="row" fxLayoutAlign="center center"
+      (click)=scan()>{{scanning ? 'SCANNING...':'SCAN'}}</div>
+  </div>
+
+</div>

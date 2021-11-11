@@ -1,0 +1,87 @@
+<!-- Demo Splash Screen -->
+<div *ngIf="showSplash" class="splash bg-white" fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="16px">
+  <div class="icon">
+    &#xe813;
+  </div>
+  <div class="title pt13 dp-bold" fxLayout="row" fxLayoutAlign="center center">{{'CABLE REPLACEMENT '}}
+    <div class="dp-medium pt13 text-darkgrey"> DEMO</div>
+  </div>
+</div>
+
+<!-- Demo Screen -->
+<div *ngIf="!showSplash" class="page bg-pearl" fxLayout="column" fxLayoutAlign="start center">
+
+  <!-- Header -->
+  <div class=" header" fxLayout="column" fxLayoutAlign="start center">
+
+    <div class="headline">
+
+
+
+    </div>
+
+    <!-- Title Group -->
+    <div fxLayout="column" fxLayoutAlign="center center">
+      <!-- Demo Icon -->
+      <div class="icon icon-title">&#xe813;</div>
+      <!-- Title -->
+      <div class="title pt11 dp-bold" fxLayout="row" fxLayoutAlign="center center">{{'CABLE REPLACEMENT '}}
+        <div class="dp-medium pt11 text-darkgrey"> DEMO</div>
+      </div>
+    </div>
+
+  </div>
+
+    <div class="own-scroll-container">
+        <div style="width: 100%;" fxLayout="column" fxLayoutGap="16px">
+
+      <ion-card class="margin-less-card" style="width: 90vw;">
+
+        <ion-card-content>
+          <div fxLayout="row" fxLayoutAlign="start start" fxLayoutGap="24px">
+            <img fxFlex src="../../assets/icon/PM1_0_Value.drawio.svg" alt="" width="80px" height="80px">
+            <div fxFlex fxFlexFill></div>
+            <div fxFlex="50" fxLayout="column" fxLayoutAlign="start end" fxLayoutGap="18px">
+              <ion-card-subtitle>mass density 1.0</ion-card-subtitle>
+              <ion-card-title>{{(PM1_0/1000).toFixed(3)}} µg/m³</ion-card-title>
+            </div>
+          </div>
+        </ion-card-content>
+
+      </ion-card>
+
+      <ion-card class="margin-less-card" style="width: 90vw;">
+
+        <ion-card-content>
+          <div fxLayout="row" fxLayoutAlign="start start" fxLayoutGap="24px">
+            <img fxFlex src="../../assets/icon/PM2_5_Value.drawio.svg" alt="" width="80px" height="80px">
+            <div fxFlex fxFlexFill></div>
+            <div fxFlex="50" fxLayout="column" fxLayoutAlign="start end" fxLayoutGap="18px">
+              <ion-card-subtitle>mass density 2.5</ion-card-subtitle>
+              <ion-card-title>{{((PM2_5-PM1_0)/1000).toFixed(3)}} µg/m³</ion-card-title>
+            </div>
+          </div>
+        </ion-card-content>
+
+      </ion-card>
+
+      <ion-card class="margin-less-card" style="width: 90vw;">
+
+        <ion-card-content>
+          <div fxLayout="row" fxLayoutAlign="start start" fxLayoutGap="24px">
+            <img fxFlex src="../../assets/icon/PM10_Value.drawio.svg" alt="" width="80px" height="80px">
+            <div fxFlex fxFlexFill></div>
+            <div fxFlex="50" fxLayout="column" fxLayoutAlign="start end" fxLayoutGap="18px">
+              <ion-card-subtitle>mass density 10</ion-card-subtitle>
+              <ion-card-title>{{((PM10-PM2_5)/1000).toFixed(3)}} µg/m³</ion-card-title>
+            </div>
+          </div>
+        </ion-card-content>
+
+      </ion-card>
+
+    </div>
+     </div>
+
+
+</div>
